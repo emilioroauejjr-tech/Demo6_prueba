@@ -1,0 +1,71 @@
+@keyframes color-change {
+  0%   { color: blue; }
+  50%  { color: white; }
+  100% { color: red; }
+}
+
+@keyframes girar{
+    0% {transform: rotate(5deg);}
+    25% {transform: rotate(0deg);}
+    50% {transform: rotate(-5deg);}
+    75% {transform: rotate(5deg);}
+    100% {transform: rotate(0deg);}
+}
+
+@keyframes cambioFondo{
+    0%   {background: linear-gradient(135deg, #0022ff, #ffd500);}
+    50%  {background: linear-gradient(135deg, #7300ff, #ffffff, #ffd500);}
+    75%  {background: linear-gradient(135deg, #13185e, #ffd000);}
+}
+
+h1{
+    animation: color-change 10s infinite;
+    margin-bottom: 15px;
+}
+
+img, h1, p, button{
+    animation: girar 2s infinite;
+    margin-bottom: 15px;
+    width: 150px;
+    margin: 20px 0;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 20px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffd166;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.widget-nba {
+    margin: 20px 0;
+}
+
+body{
+    animation: cambioFondo 4s infinite;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: white;
+}
+
+.contenedor {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 30px;
+    border-radius: 20px;
+    width: 80%;
+    max-width: 700px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+button:hover {
+    background-color: #ffb703;
+}
