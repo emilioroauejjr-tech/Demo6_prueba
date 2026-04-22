@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Electrodomésticos</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            border: 3px solid #5b8cff;
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .cards {
+            display: flex;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .card {
+            border: 2px solid #ff7a2f;
+            border-radius: 15px;
+            padding: 20px;
+            width: 120px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 60px;
+        }
+
+        .card span {
+            display: block;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h3>Seleccione el número de electrodomésticos:</h3>
+
+    <div class="cards">
+
+        <!-- 3-5 dispositivos -->
+        <a href="{{ lights + '/3' }}">
+            <div class="card">
+                <img src="https://cdn-icons-png.flaticon.com/512/1046/1046857.png">
+                <span>3-5 dispositivos</span>
+            </div>
+        </a>
+
+        <!-- 6-8 dispositivos -->
+        <a href="{{ lights + '/6' }}">
+            <div class="card">
+                <img src="https://cdn-icons-png.flaticon.com/512/1046/1046857.png">
+                <span>6-8 dispositivos</span>
+            </div>
+        </a>
+
+        <!-- 10 o más -->
+        <a href="{{ lights + '/10' }}">
+            <div class="card">
+                <img src="https://cdn-icons-png.flaticon.com/512/1046/1046857.png">
+                <span>10 o más</span>
+            </div>
+        </a>
+
+        <!-- 🌱 TARJETA ECOLÓGICA (LA IMPORTANTE) -->
+        <a href="{{ lights + '/1' }}">
+            <div class="card">
+                <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png">
+                <span>¡Nuestra asamblea ecológica!</span>
+            </div>
+        </a>
+
+    </div>
+</div>
+
+</body>
+</html>
