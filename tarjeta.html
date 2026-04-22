@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Pokemon Card</title>
+
+    <style>
+        body {
+            background: #0f172a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        .card {
+            width: 300px;
+            background: #1e293b;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+            color: white;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            background: #334155;
+        }
+
+        .card-content {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .card h2 {
+            margin: 10px 0;
+        }
+
+        .types {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 10px 0;
+        }
+
+        .type {
+            font-size: 12px;
+            padding: 6px 12px;
+            border-radius: 12px;
+            color: white;
+        }
+
+        .water {
+            background: #3b82f6;
+        }
+
+        .stats {
+            margin-top: 10px;
+            text-align: left;
+        }
+
+        .stats p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png" alt="Squirtle">
+
+        <div class="card-content">
+            <h2>Squirtle</h2>
+
+            <div class="types">
+                <span class="type water">Agua</span>
+            </div>
+
+            <div class="stats">
+                <p><strong>HP:</strong> 56</p>
+                <p><strong>Ataque:</strong> 94</p>
+                <p><strong>Defensa:</strong> 65</p>
+                <p><strong>Velocidad:</strong> 50</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
